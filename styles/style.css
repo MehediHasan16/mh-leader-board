@@ -1,3 +1,7 @@
+/* * {
+    background-color: red;
+} */
+
 /* navbar */
 nav {
     background-color: rgb(96, 5, 181);
@@ -44,16 +48,22 @@ ul li {
 }
 
 /* top player */
+body {
+    background-color: rgb(219, 219, 219);
+}
+
 main {
+
     margin: 0 250px;
 }
 
 .top-player {
+    background-color: rgb(255, 255, 255);
     margin-bottom: 50px;
 }
 
 .top-heading-text {
-    margin-left: 185px;
+    margin-left: 100px;
     color: rgb(96, 5, 181);
 
 }
@@ -106,13 +116,20 @@ p a {
 }
 
 /* lates course */
+.courses-item {
+    background-color: white;
+    border: 2px solid red;
+    height: 400px;
+}
+
 .lates-courses {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .course {
-    /* border: 2px solid blue; */
+
+    border: 2px solid blue;
     padding: 5px 10px;
     margin: 0 20px;
     /* display: flex;
