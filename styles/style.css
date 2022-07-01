@@ -1,3 +1,28 @@
+/* font styly */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600&family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-family: 'Poppins', sans-serif;
+    background: #F3F1FF;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 22px;
+    width: 870px;
+
+}
+
+
 /* * {
     background-color: red;
 } */
@@ -48,48 +73,50 @@ ul li {
 }
 
 /* top player */
-body {
-    background-color: rgb(219, 219, 219);
-}
 
-main {
 
-    margin: 0 250px;
-}
-
-.top-player {
+.top-players {
     background-color: rgb(255, 255, 255);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
-.top-heading-text {
-    margin-left: 100px;
-    color: rgb(96, 5, 181);
+.section-title {
+
+    font-size: 24px;
+    margin-top: 3px;
+    color: #562EFF;
 
 }
 
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* border: 2px solid red; */
+    grid-row-gap: 30px;
+
+
 
 }
 
 .player {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    margin: 24px 0px;
+    /* margin: 24px 0px; */
 }
 
 .player img {
-    width: 20%;
-    margin-right: 20px;
+    width: 56px;
+    height: 56px;
+    /* margin-right: 20px; */
+}
+
+.player-name {
+    margin-left: 16px;
+    font-size: 18px;
 }
 
 hr {
-    margin: 0px 126px;
-
+    border: 1px solid #D1D1D1;
 }
 
 /* top blogs */
@@ -100,7 +127,7 @@ hr {
 
 .blog {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     margin: 20px 0;
 
@@ -118,7 +145,7 @@ p a {
 /* lates course */
 .courses-item {
     background-color: white;
-    border: 2px solid red;
+
     height: 400px;
 }
 
@@ -129,13 +156,13 @@ p a {
 
 .course {
 
-    border: 2px solid blue;
+
     padding: 5px 10px;
     margin: 0 20px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
+    border-radius: 10px;
+    height: 300px;
+    box-shadow: -5px 4px 17px #d1d1d1;
+
 }
 
 .course img {
