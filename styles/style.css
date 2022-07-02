@@ -19,6 +19,7 @@ main {
     padding: 30px;
     margin-bottom: 22px;
     width: 870px;
+    border-radius: 5px;
 
 }
 
@@ -120,22 +121,34 @@ hr {
 }
 
 /* top blogs */
+.section-title-2 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #562EFF;
+}
+
 .blogs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
 }
 
 .blog {
     display: flex;
     /* justify-content: center; */
     align-items: center;
-    margin: 20px 0;
+
 
 }
 
 .blog img {
     width: 45%;
-    margin-right: 20px;
+
+}
+
+.blog-text {
+    margin-left: 16px;
 }
 
 p a {
@@ -168,7 +181,8 @@ p a {
 .course img {
 
 
-    width: 100%;
+    Width: 224px;
+    height: 104px;
 }
 
 
@@ -188,4 +202,92 @@ p a {
     padding: 5px 9px;
     border-radius: 14px;
 
+}
+
+@media only screen and (max-width:688px) {
+    ul {
+        flex-direction: column;
+    }
+
+    .top-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0;
+
+
+    }
+
+    .section-title,
+    .section-title-2,
+    .top-heading-text {
+        text-align: center;
+    }
+
+    .players,
+    .blogs,
+    .lates-courses {
+
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blogs {
+        padding-left: 20px;
+    }
+
+    .player {
+
+        flex-direction: column;
+    }
+
+    .courses-item {
+        height: 1090px;
+    }
+
+    .course {
+        margin-bottom: 20px;
+    }
+
+
+
+}
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .section-title,
+    .section-title-2,
+    .top-heading-text {
+        text-align: center;
+    }
+
+    .players,
+    .blogs,
+    .lates-courses {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .player {
+        flex-direction: column;
+    }
+
+    .courses-item {
+        height: 700px;
+    }
 }
